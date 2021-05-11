@@ -133,7 +133,8 @@ header nav ul li a:hover{
 }
 
 .hero-image img {
-   width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero button {
@@ -151,9 +152,17 @@ header nav ul li a:hover{
 }
 
 .hero button:hover {
-    transform: scale(.98);
-    background: #6323ac;
+    transform: scale(.99);
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
+
+@keyframes background-color {
+    100% {
+      background-color: #a864f7;
+    }
+  }
 
 @media( max-width: 1073px) {
     .heroflex {
@@ -204,6 +213,10 @@ header nav ul li a:hover{
     flex-wrap: wrap;
     padding: 40px 0;
 
+}
+
+.logoItems img{
+    flex-basis: 90px;
 }
 
 @media( max-width: 580px) {
@@ -309,6 +322,26 @@ header nav ul li a:hover{
     position: relative;
 }
 
+.storiesSection .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    column-gap: 30px;
+}
+
+.storiesSection .stories-col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.stories-col2 {
+    margin-top: 75px;
+}
+
+
+
 .textCard {
     position: relative;
 }
@@ -334,7 +367,7 @@ header nav ul li a:hover{
     left: 93px;
 }
 
-.testimonial-card {
+.testimonial-card-1 {
     width: 350px;
     height: 468px;
     background: #FFFFFF;
@@ -342,9 +375,28 @@ header nav ul li a:hover{
     border-radius: 8px;
     padding: 32px;
     margin-top:32px;
+    align-self: flex-end;
+}
+.testimonial-card-2 {
+    width: 445px;
+    height: 340px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    border-radius: 8px;
+    padding: 32px;
+    margin-top:32px;
+}
+.testimonial-card-3 {
+    width: 350px;
+    height: 276px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    border-radius: 8px;
+    padding: 32px;
+    margin-top:32px;
 }
 
-.testimonial-card p {
+.testimonial-card-content p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -380,3 +432,4 @@ header nav ul li a:hover{
 .cardFlex img {
     margin-right: 16px;
 }
+
