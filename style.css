@@ -70,7 +70,6 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 570px;
-
 }
 
 header nav {
@@ -104,6 +103,21 @@ header nav ul li a:hover{
 
 .appIcons img {
     margin-right:10px;
+}
+
+@media (max-width: 830px ) {
+    header nav {
+        flex-direction:column ; 
+    }
+
+    .appIcons {
+        padding-top: 10px;
+    }
+
+    .logoAndNav {
+        padding-top: 20px;
+
+    }
 }
 
 /* ----------------- Hero ----------------- */
@@ -341,7 +355,6 @@ header nav ul li a:hover{
 }
 
 
-
 .textCard {
     position: relative;
 }
@@ -432,4 +445,180 @@ header nav ul li a:hover{
 .cardFlex img {
     margin-right: 16px;
 }
+
+@media(max-width:1000px){
+
+    .storiesSection .container {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .storiesSection .stories-col1 {
+        align-items: center;
+    }
+
+    .testimonial-card-1 {
+        align-self: center;
+    }
+
+    .storiesSection .stories-col2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stories-col2 {
+        margin-top:0;
+    }
+
+    .textCard {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .storiesSection .textCard img {
+        align-self: center;
+    }
+    
+    .storiesSection .textCard h2 {
+        text-align: center;
+        left: 0;
+    }
+    
+    .storiesSection .textCard p {
+        text-align: center;
+        left: 0;
+    }
+
+    .testimonial-card-2 {
+        width: 345px;
+        height: 420px;
+    }
+
+}
+
+/* ----------------- Achievements  ----------------- */
+
+.achievements-section {
+    position: relative;
+}
+
+.section1{
+    margin-top: 80px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    flex-wrap: wrap;
+}
+
+.achieve-header-textbox h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.achieve-header-textbox p {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.achieve-feature-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 45px;
+}
+
+.feature-box-item {
+    display: flex;
+    align-items: center;
+    width: 255px;
+}
+
+.feature-box-item-text {
+    margin-left: 16px;
+}
+
+.feature-box-item h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+
+}
+
+.feature-box-item p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.section2 {
+    margin-top: 164px;
+    margin-bottom: 64px;
+}
+
+.section2-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section2-pic-card {
+    background: #F1E4FF;
+    border-radius: 8px;
+    width: 540px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.section2-text-card {
+    width: 540px;
+    padding: 0px 48px 0px 48px;
+}
+
+.section2-text-card h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.section2-text-card p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 32px;
+    width: 444px;
+}
+
+.section2-text-card a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C30F5;
+    text-decoration: none;
+}
+
+.purpleLink {
+    display: flex;
+    margin-top: 32px;
+}
+
+.purpleLink img {
+    padding-left: 10px;
+}
+
 
