@@ -45,6 +45,12 @@ h4 {
     font-size: 28px;
 }
 
+li {
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #18191F;
+}
 /* ----------------- Background Image ----------------- */
 
 .bgImage {
@@ -616,12 +622,18 @@ header nav ul li a:hover{
     text-decoration: none;
 }
 
+.section2-text-card a:hover {
+    color: #b277f7;
+}
+
+
 .purpleLink {
-    display: flex;
+    /* display: flex; */
     margin-top: 32px;
 }
 
 .purpleLink img {
+    vertical-align: middle;
     padding-left: 10px;
 }
 
@@ -675,5 +687,202 @@ header nav ul li a:hover{
 
 }
 
+@media(max-width:600px) {
+
+    .section2 {
+        padding-top: 32px;
+    }
+
+    .section2-card {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section2-text-card {
+        margin-top: 40px;   
+    }
+
+    .section2-card h3 {
+        text-align: center;
+    }
+
+    .section2-card p {
+        text-align: justify;
+    }
+
+    .purpleLink {
+        justify-content: center;
+    }
+
+    .section3 {
+        padding-top: 32px;
+    }
+
+    .section3-text-card {
+        grid-template-columns: 1fr;
+    }
+
+    .section3-text-card img {
+        grid-column: initial;
+    }
+
+    .section3-text-card p {
+        justify-self:center;
+        text-align: justify;
+    }
+
+    .section3-text-card h3 {
+        justify-self:center;
+        text-align: center;
+    }
+
+}
+
+/* ----------------- Mange Projects  ----------------- */
+
+.manage-projects {
+    position: relative;
+    background: #2EC5CE;
+}
+
+.manage-projects .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manage-projects-text {
+    padding: 68px 0px 68px 0px;
+    max-width: 540px;
+}
+
+.manage-projects-text h2{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.manage-projects-text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 10px;
+    max-width: 540px;
+}
+
+#get-app-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+
+.manage-projects .appIcons img {
+    margin-right: 12px;
+}
+
+.manage-projects-image-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 540px;  
+}
+
+.manage-projects-image-box img {
+    width: 100%;
+}
+
+.image-1 {
+    align-self: start;
+}
+
+.image-2 {
+    align-self:end;      
+}
+
+@media(max-width:1000px){
+
+    .manage-projects-image-box{
+        grid-template-columns: 1fr;   
+    }
+    .image-2 {
+        display: none;
+    }
+    .manage-projects .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .manage-projects-text {
+        padding-top: 0;
+    }
+
+    .manage-projects-text h2{
+        text-align: center;
+    }
+    
+    .manage-projects-text p{
+        text-align: center;
+    }
+
+    .manage-projects .appIcons {
+        justify-content: center;
+    }
+}
+
+/* ----------------- FOOTER SECTION ----------------- */
+
+.footer-section {
+    position: relative;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-color: #0B0D17;
+}
+
+.footer-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section ul {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.footer-section .footer-left img{
+    margin-bottom: 24px;
+}
+
+.footer-section p, .footer-section li {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.footer-section ul li {
+    margin-right: 24px;
+}
+
+.footer-section .footer-left p {
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
 
 
+.footer-section .footer-right .appIcons {
+    flex-direction: column;
+}
+
+.footer-section .footer-right .appIcons img {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
