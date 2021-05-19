@@ -72,6 +72,14 @@ header {
     height: 70px;
 }
 
+.toggle-button{
+    
+}
+
+header nav ul {
+    display: flex;
+}
+
 .logoAndNav {
     display: flex;
     align-items: center;
@@ -87,9 +95,14 @@ header nav {
     padding: 0 30px;
 }
 
-header nav ul {
+.appIcons {
     display: flex;
 }
+
+.appIcons img {
+    margin-right:10px;
+}
+
 
 header nav ul li {
     list-style: none;
@@ -104,13 +117,6 @@ header nav ul li a:hover{
     border-bottom: 2px solid #1C2C40;
 }
 
-.appIcons {
-    display: flex;
-}
-
-.appIcons img {
-    margin-right:10px;
-}
 
 @media (max-width: 830px ) {
     header nav {
