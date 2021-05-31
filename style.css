@@ -69,34 +69,8 @@ li {
 header {
     position: relative;
     z-index: 10;
-    height: 70px;
-}
-
-.toggle-button{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: #8C30F5;
-    border-radius:10px;
-} 
-
-
-header nav ul {
-    display: flex;
-}
-
-.logoAndNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 570px;
+    min-height: 70px;
+    padding-top: 20px;
 }
 
 header nav {
@@ -106,6 +80,37 @@ header nav {
     height: 100%;
     padding: 0 30px;
 }
+
+.navlinks ul {
+    display: flex;
+    
+}
+
+header .logo {
+    
+}
+
+.logoAndNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #8C30F5;
+    border-radius:10px;
+} 
 
 .appIcons {
     display: flex;
@@ -130,7 +135,7 @@ header nav ul li a:hover{
 }
 
 
-@media (max-width: 830px ) {
+/* @media (max-width: 830px ) {
     header nav {
         flex-direction:column ; 
     }
@@ -141,19 +146,27 @@ header nav ul li a:hover{
 
     .logoAndNav {
         padding-top: 20px;
-
     }
-}
+} */
 
-@media(max-width: 600px) {
+@media(max-width: 830px) {
     .toggle-button {
         display: flex;
     } 
     .navlinks {
-        display: none;
+        /* display: none; */
+
+    }
+    .logoAndNav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .appIcons {
+    .navlinks ul {
+        flex-direction: column;
+    }
+
+    header .appIcons {
         display: none;
     }
 
@@ -965,3 +978,4 @@ header nav ul li a:hover{
 
 
 }
+
