@@ -82,8 +82,7 @@ header nav {
 }
 
 .navlinks ul {
-    display: flex;
-    
+    display: flex;   
 }
 
 header .logo {
@@ -150,24 +149,45 @@ header nav ul li a:hover{
 } */
 
 @media(max-width: 830px) {
-    .toggle-button {
-        display: flex;
-    } 
-    .navlinks {
-        /* display: none; */
+    header .appIcons {
+        display: none;
+    }
+    .logoAndNav { 
+        width: 100%;
+    }
+}
 
+@media(max-width: 530px) {
+    header nav {
+        align-items: flex-start;
     }
     .logoAndNav {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    
+    .toggle-button {
+        display: flex;
+    } 
+    .navlinks {
+        display: none;
+    }
+    .navlinks.active {
+        display: flex;
+    }
+    
     .navlinks ul {
         flex-direction: column;
+        width: 100%;
     }
 
-    header .appIcons {
-        display: none;
+    .navlinks li {
+        padding: 10px 0 10px 0;
+        margin-left: 40px;
+    }
+
+    .navlinks li a{
+        font-size: 16px;
     }
 
 }
@@ -548,6 +568,22 @@ header nav ul li a:hover{
         height: 420px;
     }
 
+}
+
+@media(max-width:380px){
+    .testimonial-card-2 {
+        width: 320px;
+        height: 450px;
+    }
+    .testimonial-card-3 {
+        max-width: 320px;
+        height: 320px;
+    }
+    }
+    .testimonial-card-1 {
+        max-width: 320px;
+        height: 500px;
+    }
 }
 
 /* ----------------- Achievements  ----------------- */
